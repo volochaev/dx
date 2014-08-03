@@ -1,0 +1,54 @@
+.list
+  list-style-position: inside
+  .list
+    padding-left: 40px
+
+.list-disc
+  list-style-type: disc
+
+.list-square
+  list-style-type: square
+
+.list-border
+  list-style: none
+  li
+    border-left: 5px solid #2ecc71
+    padding-left: 10px
+    margin-bottom: 5px
+
+.list-chevron
+  list-style: none
+  li:before
+    content: "\f105"
+    color: #2ecc71
+    font-family: FontAwesome
+    margin-right: 5px
+
+.list-none
+  list-style-type: none
+
+.columns1
+  -webkit-columns: 20px 1
+  -moz-columns: 20px 1
+  columns: 20px 1
+
+.columns2
+  -webkit-columns: 20px 2
+  -moz-columns: 20px 2
+  columns: 20px 2
+
+.columns3
+  -webkit-columns: 20px 3
+  -moz-columns: 20px 3
+  columns: 20px 3
+
+.columns4
+  -webkit-columns: 20px 4
+  -moz-columns: 20px 4
+  columns: 20px 4
+
+@media (max-width: 767px)
+  .columns1, .columns2, .columns3, .columns4
+    -webkit-columns: 20px 1
+    -moz-columns: 20px 1
+    columns: 20px 1

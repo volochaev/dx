@@ -1,0 +1,131 @@
+.table
+  td, th
+    border-top: 1px solid #e3e3e3
+
+.table-striped tbody > tr:nth-child(2n+1) >
+  td, th
+    background-color: #f0f0f0
+
+.table-bordered
+  border: 1px solid #e3e3e3
+  -webkit-border-radius: 2px
+  -webkit-background-clip: padding-box
+  -moz-border-radius: 2px
+  -moz-background-clip: padding
+  border-radius: 2px
+  background-clip: padding-box
+  thead:first-child tr:first-child >
+    th:first-child, td:first-child
+      -webkit-border-top-left-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius-topleft: 2px
+      -moz-background-clip: padding
+      border-top-left-radius: 2px
+      background-clip: padding-box
+  tbody:first-child tr:first-child >
+    th:first-child, td:first-child
+      -webkit-border-top-left-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius-topleft: 2px
+      -moz-background-clip: padding
+      border-top-left-radius: 2px
+      background-clip: padding-box
+  thead:first-child tr:first-child >
+    th:last-child, td:last-child
+      -webkit-border-top-right-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius-topright: 2px
+      -moz-background-clip: padding
+      border-top-right-radius: 2px
+      background-clip: padding-box
+  tbody:first-child tr:first-child >
+    th:last-child, td:last-child
+      -webkit-border-top-right-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius-topright: 2px
+      -moz-background-clip: padding
+      border-top-right-radius: 2px
+      background-clip: padding-box
+  thead:last-child tr:last-child >
+    th:first-child, td:first-child tbody:last-child tr:last-child > th:first-child
+      -webkit-border-bottom-left-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius-bottomleft: 2px
+      -moz-background-clip: padding
+      border-bottom-left-radius: 2px
+      background-clip: padding-box
+  tbody:last-child tr:last-child > td:first-child
+    -webkit-border-bottom-left-radius: 2px
+    -webkit-background-clip: padding-box
+    -moz-border-radius-bottomleft: 2px
+    -moz-background-clip: padding
+    border-bottom-left-radius: 2px
+    background-clip: padding-box
+  tfoot:last-child tr:last-child >
+    th:first-child, td:first-child
+      -webkit-border-bottom-left-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius-bottomleft: 2px
+      -moz-background-clip: padding
+      border-bottom-left-radius: 2px
+      background-clip: padding-box
+  thead:last-child tr:last-child >
+    th:last-child, td:last-child
+      -webkit-border-bottom-right-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius-bottomright: 2px
+      -moz-background-clip: padding
+      border-bottom-right-radius: 2px
+      background-clip: padding-box
+  tbody:last-child tr:last-child >
+    th:last-child, td:last-child
+      -webkit-border-bottom-right-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius-bottomright: 2px
+      -moz-background-clip: padding
+      border-bottom-right-radius: 2px
+      background-clip: padding-box
+  tfoot:last-child tr:last-child >
+    th:last-child, td:last-child
+      -webkit-border-bottom-right-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius-bottomright: 2px
+      -moz-background-clip: padding
+      border-bottom-right-radius: 2px
+      background-clip: padding-box
+
+.table-hover tbody tr:hover >
+  th, td
+    background-color: #2ecc71
+    color: #ffffff
+
+.styled-table
+  width: 100%
+  margin-bottom: 20px
+  thead
+    th, td
+      font-size: 12px
+      color: #474948
+      border-bottom: 1px solid #d7d7d7
+      text-transform: uppercase
+    th
+      font-weight: 600
+    td
+      font-weight: 400
+  tbody
+    th, td
+      border-bottom: 1px solid #f0f0f0
+  thead th, tbody th, thead td, tbody td
+    text-align: left
+    padding: 10px
+    vertical-align: top
+  thead th:first-child, tbody th:first-child, thead td:first-child, tbody td:first-child
+    padding-left: 0
+  thead th:last-child, tbody th:last-child, thead td:last-child, tbody td:last-child
+    padding-right: 0
+  thead th.text-left, tbody th.text-left, thead td.text-left, tbody td.text-left
+    text-align: left
+  thead th.text-center, tbody th.text-center, thead td.text-center, tbody td.text-center
+    text-align: center
+  thead th.text-right, tbody th.text-right, thead td.text-right, tbody td.text-right
+    text-align: right

@@ -1,0 +1,560 @@
+.header
+  position: relative
+  z-index: 250
+  a
+    color: inherit
+    font-weight: 700
+    text-decoration: none
+    font-size: 13px
+  .top
+    position: relative
+    z-index: 10
+    background-color: #474948
+    height: 32px
+    font-size: 12px
+    line-height: 32px
+    color: #ffffff
+    p, ul
+      margin-bottom: 0
+    a
+      font-size: 12px
+      color: inherit
+      text-decoration: none
+      color: #ffffff
+      &:hover
+        color: #2ecc71
+        text-decoration: none
+        color: #c7c8c8
+  .bottom
+    background-color: #ffffff
+    padding: 0
+    -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.2)
+    -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.2)
+    box-shadow: 0 1px 2px rgba(71, 73, 72, 0.2)
+    &:before
+      content: ''
+      display: block
+    &:after
+      content: ''
+      display: table
+      clear: both
+  .logo
+    padding: 10px 0
+    a
+      display: inline-block
+      height: 60px
+      text-decoration: none
+    img
+      max-height: 100%
+
+@media (max-width: 767px)
+  .header .bottom .container
+    position: relative
+    height: 150px
+    overflow: hidden
+
+@media (max-width: 767px)
+  .header .logo
+    width: auto
+    float: none
+    margin: 0
+    a
+      text-align: center
+
+.search
+  padding: 25px 0
+  .qs_s
+    position: relative
+    #query
+      background-color: #f0f0f0
+      border-color: #d7d7d7
+      padding: 4px 14px
+      margin-bottom: 0
+      width: 100%
+      height: 30px
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      -webkit-border-radius: 9999px
+      -webkit-background-clip: padding-box
+      -moz-border-radius: 9999px
+      -moz-background-clip: padding
+      border-radius: 9999px
+      background-clip: padding-box
+      -webkit-box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+      -moz-box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+      box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+
+      &:focus
+        background-color: #f6f6f6
+        -webkit-box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+        -moz-box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+        box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+
+  #autocomplete-results
+    position: absolute
+    width: 100%
+    ul
+      margin: 6px 0 0
+      background-color: #ffffff
+      border-left: 5px solid #2ecc71
+      position: relative
+      -webkit-border-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius: 2px
+      -moz-background-clip: padding
+      border-radius: 2px
+      background-clip: padding-box
+      -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.5)
+      -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.5)
+      box-shadow: 0 1px 2px rgba(71, 73, 72, 0.5)
+
+      &:before
+        content: ""
+        display: block
+        width: 26px
+        height: 14px
+        position: absolute
+        left: 50%
+        top: -14px
+        margin-left: -13px
+        background-image: url('../../img/triangle.png')
+        z-index: 100
+      li
+        list-style: none
+        border-top: 1px solid #f0f0f0
+        &:first-child
+          border-top: none
+      a
+        display: block
+        padding: 10px
+        color: inherit
+        text-decoration: none
+        .image
+          width: 30px
+          height: 30px
+          overflow: hidden
+          float: left
+          margin-right: 10px
+          img
+            display: block
+        h6
+          line-height: 30px
+          font-size: 12px
+          margin: 0
+          font-weight: 400
+        &:hover
+          background-color: #f0f0f0
+      li.active a
+        text-decoration: none
+        background-color: #2ecc71
+        h6
+          font-weight: 700
+          color: #ffffff
+
+@media (max-width: 767px)
+  .search
+    padding: 20px 0
+
+.mini-cart
+  padding: 20px 0
+  a
+    display: block
+    line-height: 40px
+    float: right
+    height: 40px
+    width: 40px
+    background: url('../../img/cart.png') no-repeat left center
+    position: relative
+    > span
+      display: inline-block
+      width: 20px
+      height: 20px
+      line-height: 20px
+      font-size: 11px
+      text-align: center
+      background-color: #2ecc71
+      color: #ffffff
+      position: absolute
+      top: 0
+      right: 0px
+      -webkit-border-radius: 12px
+      -webkit-background-clip: padding-box
+      -moz-border-radius: 12px
+      -moz-background-clip: padding
+      border-radius: 12px
+      background-clip: padding-box
+
+@media (max-width: 767px)
+  .mini-cart
+    display: block
+    position: absolute
+    top: 0
+    right: 0
+
+nav.navigation
+  background-color: #fbfbf9
+  position: relative
+  z-index: 240
+  -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.1)
+  -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.1)
+  box-shadow: 0 1px 2px rgba(71, 73, 72, 0.1)
+
+
+@media (max-width: 979px)
+  nav.navigation .container .row .span9
+    width: auto
+    float: none
+
+.main-menu
+  margin: 0
+  height: auto
+
+  &:before
+    content: ''
+    display: block
+  &:after
+    content: ''
+    display: table
+    clear: both
+  li
+    list-style: none
+  a
+    text-decoration: none
+    font-size: 12px
+    display: block
+  li
+    position: relative
+    ul
+      display: none
+      position: absolute
+      border-top: 5px solid #2ecc71
+      background-color: #ffffff
+      margin: 0
+      -webkit-border-radius: 2px
+      -webkit-background-clip: padding-box
+      -moz-border-radius: 2px
+      -moz-background-clip: padding
+      border-radius: 2px
+      background-clip: padding-box
+      -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25)
+      -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25)
+      box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25)
+
+      z-index: 1000
+      min-width: 200px
+      li
+        a
+          padding: 15px 20px
+          border-top: 1px solid #f0f0f0
+          color: #474948
+        &.menu-item-has-children > a:before
+          font-family: fontAwesome
+          content: "\f0da"
+          float: right
+          color: #474948
+        &:first-child a
+          border-top: none
+        ul
+          left: 190px
+          top: 10px
+    &:hover
+      > a
+        background-color: #2ecc71
+        color: #ffffff
+      &.menu-item-has-children > a:before
+        color: #ffffff
+      > ul
+        display: block
+  > li
+    float: left
+    >
+      ul
+        left: -9999px
+        top: -9999px
+      a
+        padding: 15px 30px 15px 0
+        color: #606362
+        text-transform: uppercase
+    &:hover > a, > a:hover
+      color: #2ecc71
+      background: none
+    ul li ul li > ul
+      left: auto
+      right: 190px
+      li ul
+        right: auto
+        left: 190px
+  .megamenu-parent
+    position: static
+  .megamenu-sub-menu
+    padding: 20px
+    padding-top: 0px
+    ul
+      position: static
+      left: auto
+      top: auto
+      right: auto
+      min-width: 0px
+    li:hover ul
+      left: auto
+      top: auto
+    .megamenu-inner-sub-menu
+      width: 100%
+      > li
+        display: block
+        padding: 0px
+        margin: 0px
+        border: 0px
+        a
+          display: block
+          background: none
+          color: #474948
+          padding: 5px
+          margin: 0px
+          border: 0px
+          font-size: 12px
+          &:before
+            content: "\f105"
+            color: #2ecc71
+            font-family: FontAwesome
+            margin-right: 5px
+          &:hover
+            color: #2ecc71
+    .megamenu-column
+      float: left
+      padding-right: 20px
+      ul
+        -webkit-box-shadow: none
+        -moz-box-shadow: none
+        box-shadow: none
+
+        border: 0px
+        padding: 0px
+      a
+        color: #2ecc71
+        &:before
+          content: ""
+        &:hover
+          color: #474948
+    .megamenu-content
+      font-size: 12px
+      .map-canvas, img, iframe
+        margin: 0px
+        padding: 0px
+        display: block
+      .map-canvas
+        margin-bottom: 20px
+      [class*="span"]
+        width: 100%
+      ul
+        display: block
+        -webkit-box-shadow: none
+        -moz-box-shadow: none
+        box-shadow: none
+
+        border: 0px
+        list-style: disc
+        li
+          border: 0px
+          list-style: disc
+          a
+            border: 0px
+            background: none
+            color: #474948
+            &:hover
+              color: #2ecc71
+              background: none
+    .megamenu-inner-sub-menu .megamenu-heading, .megamenu-heading
+      margin: 0px
+      padding: 0px
+      padding-top: 20px
+      left: auto
+      right: auto
+      clear: both
+    .megamenu-inner-sub-menu .megamenu-heading
+      a:hover, &:hover a, a
+        background: none
+        margin: 0px
+        padding: 0px
+        color: #474948
+        font-weight: bold
+        font-size: 16px
+        cursor: text
+        margin-bottom: 20px
+        display: block
+        border: 0px
+        -webkit-transition: none
+        -moz-transition: none
+        -o-transition: none
+        -ms-transition: none
+        transition: none
+    .megamenu-heading
+      a:hover, &:hover a, a
+        background: none
+        margin: 0px
+        padding: 0px
+        color: #474948
+        font-weight: bold
+        font-size: 16px
+        cursor: text
+        margin-bottom: 20px
+        display: block
+        border: 0px
+        -webkit-transition: none
+        -moz-transition: none
+        -o-transition: none
+        -ms-transition: none
+        transition: none
+    .megamenu-inner-sub-menu .megamenu-heading
+      a:hover:before, &:hover a:before, a:before
+        display: none
+    .megamenu-heading
+      a:hover:before, &:hover a:before, a:before
+        display: none
+    input
+      &[type="text"], &[type="password"], &[type="date"], &[type="datetime"], &[type="email"], &[type="number"], &[type="search"], &[type="tel"], &[type="time"], &[type="url"]
+        min-height: 30px
+        width: 100%
+    textarea, select
+      min-height: 30px
+      width: 100%
+    textarea
+      height: 100px
+
+.megamenu_container
+  height: auto
+
+.main-menu-button
+  display: none !important
+
+@media only screen and (min-width: 979px)
+  .main-menu > li:hover > ul
+    left: 0px
+    top: 50px
+    display: block
+
+@media only screen and (max-width: 979px)
+  .main-menu-button
+    display: block !important
+    -webkit-border-radius: 2px
+    -webkit-background-clip: padding-box
+    -moz-border-radius: 2px
+    -moz-background-clip: padding
+    border-radius: 2px
+    background-clip: padding-box
+    padding: 10px
+    padding-left: 15px
+    padding-right: 15px
+    margin-top: 10px
+    text-decoration: none
+    border: 0px
+    background-color: #2ecc71
+    color: #ffffff
+    &:after
+      font-family: fontAwesome
+      content: "\f078"
+      font-weight: bold
+      float: right
+    &:hover, &:focus, &:active
+      background-color: rgba(46, 204, 113, 0.8)
+      color: #ffffff
+      text-decoration: none
+  .megamenu_container
+    overflow: hidden
+    -webkit-transition: height 0.5s ease
+    -moz-transition: height 0.5s ease
+    -o-transition: height 0.5s ease
+    -ms-transition: height 0.5s ease
+    transition: height 0.5s ease
+    padding-bottom: 10px
+  .main-menu
+    position: relative
+    margin-bottom: 5px
+    right: 0%
+    display: none
+    &.selected
+      display: block
+    li
+      display: block
+      float: none
+      margin-top: 1px
+      position: static
+      ul li a, a
+        display: block
+        float: none
+        padding: 10px 15px
+        border: 0px
+      ul li a:hover, a:hover
+        background-color: #2ecc71
+        -webkit-border-radius: 2px
+        -webkit-background-clip: padding-box
+        -moz-border-radius: 2px
+        -moz-background-clip: padding
+        border-radius: 2px
+        background-clip: padding-box
+        color: #ffffff !important
+      &.back > a:before
+        font-family: fontAwesome
+        content: "\f0d9"
+        margin-right: 5px
+      &.menu-item-has-children > a:before
+        font-family: fontAwesome
+        content: "\f0da"
+        float: right
+      &.megamenu-parent
+        display: none
+      ul
+        display: none
+        width: 100%
+        position: absolute
+        left: 100%
+        right: auto
+        top: 0px
+        -webkit-box-shadow: none
+        -moz-box-shadow: none
+        box-shadow: none
+
+        background: none
+        border: 0px
+        li ul
+          display: none
+          width: 100%
+          position: absolute
+          left: 100%
+          right: auto
+          top: 0px
+          -webkit-box-shadow: none
+          -moz-box-shadow: none
+          box-shadow: none
+
+          background: none
+          border: 0px
+          li ul
+            display: none
+            width: 100%
+            position: absolute
+            left: 100%
+            right: auto
+            top: 0px
+            -webkit-box-shadow: none
+            -moz-box-shadow: none
+            box-shadow: none
+
+            background: none
+            border: 0px
+            li ul
+              display: none
+              width: 100%
+              position: absolute
+              left: 100%
+              right: auto
+              top: 0px
+              -webkit-box-shadow: none
+              -moz-box-shadow: none
+              box-shadow: none
+
+              background: none
+              border: 0px
+      &.selected > ul
+        display: block
