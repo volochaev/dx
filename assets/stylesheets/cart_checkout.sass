@@ -1,0 +1,138 @@
+.cart-items
+  .col_product
+    .image
+      float: left
+      margin-right: 20px
+      a
+        display: block
+        border: 4px solid #f0f0f0
+        position: relative
+        &:before
+          content: ""
+          width: 100%
+          height: 100%
+          position: absolute
+          top: 0
+          left: 0
+          background-color: #474948
+          -webkit-transition: all 200ms ease-in-out
+          -moz-transition: all 200ms ease-in-out
+          -o-transition: all 200ms ease-in-out
+          -ms-transition: all 200ms ease-in-out
+          transition: all 200ms ease-in-out
+          -webkit-opacity: 0
+          -moz-opacity: 0
+          opacity: 0
+        &:hover, &:focus
+          border-color: #2ecc71
+        &:hover:before, &:focus:before
+          -webkit-opacity: 0.5
+          -moz-opacity: 0.5
+          opacity: 0.5
+    h5
+      margin: 0 0 10px
+      font-weight: 700
+      font-size: 14px
+      letter-spacing: 0
+      a
+        color: inherit
+        &:hover, &:focus
+          color: #2ecc71
+    .options li, .extras li
+      list-style: none
+      font-size: 12px
+      text-transform: uppercase
+      color: #797d7b
+    .options li:before, .extras li:before
+      content: "\f105"
+      color: #2ecc71
+      font-family: FontAwesome
+      margin-right: 5px
+  .col_remove a
+    text-decoration: none
+  .col_qty input[type="text"]
+    width: 20px
+    text-align: right
+  .col_single .single-price, .col_total .single-price, .col_discount .single-price, .col_single .total-price, .col_total .total-price, .col_discount .total-price, .col_single .discount, .col_total .discount, .col_discount .discount
+    font-size: 13px
+    font-weight: 600
+
+@media (max-width: 980px)
+  .styled-table.orders thead, .cart-items thead
+    display: none
+  .styled-table.orders tbody, .cart-items tbody
+    width: 100%
+  .styled-table.orders tbody tr, .cart-items tbody tr
+    overflow: hidden
+    height: auto
+    width: 100%
+    border: 1px solid #e3e3e3
+  .styled-table.orders tbody tr td, .cart-items tbody tr td
+    display: block
+    text-align: left
+    padding-left: calc(50% + 10px)
+    position: relative
+    overflow: hidden
+    height: auto
+    border-bottom: 1px solid #f0f0f0
+  .styled-table.orders tbody tr td:first-child, .cart-items tbody tr td:first-child
+    padding: 10px
+    padding-left: calc(50% + 10px)
+  .styled-table.orders tbody tr td.text-right, .cart-items tbody tr td.text-right
+    text-align: left
+  .styled-table.orders tbody tr td:before, .cart-items tbody tr td:before
+    content: attr(data-title)
+    display: block
+    font-weight: bold
+    position: absolute
+    left: 0px
+    top: 0px
+    padding: 10px
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    width: 50%
+    height: 100%
+    background-color: #f9f9f9
+
+.cart .coupon
+  form
+    margin: 20px 0 0
+  .input-append
+    margin-bottom: 0
+    width: 100%
+    input[type="text"], button
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+    input[type="text"]
+      width: 80%
+      height: 30px
+    button
+      width: 20%
+
+.checkout
+  .nav-tabs
+    margin: -20px -20px 20px
+    li
+      width: 20%
+      > div
+        -webkit-opacity: 0.5
+        -moz-opacity: 0.5
+        opacity: 0.5
+  .shipping-methods! .box-content, .payment-methods! .box-content
+  .shipping-methods .box-content:before, .payment-methods .box-content:before
+    content: ''
+    display: block
+  .shipping-methods .box-content:after, .payment-methods .box-content:after
+    content: ''
+    display: table
+    clear: both
+  .shipping-methods .box-content .price, .payment-methods .box-content .price
+    float: left
+  .shipping-methods .box-content input, .payment-methods .box-content input
+    float: right
+
+@media (max-width: 480px)
+  .checkout .nav-tabs li
+    width: 33.33%

@@ -1,11 +1,24 @@
 doctype html
-html
+html dir='ltr' lang='ru'
   head
-    meta charset="utf-8"
-    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    meta charset='utf-8'
+    meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
+    meta name='description' content=''
+    meta name='keywords' content=''
+    meta name='author' content='La Boutique HTML v7'
 
     title DanceExclusive &middot; loading
 
-    == css :application
+    == css :application, media: 'screen'
+    link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Shadows+Into+Light' rel='stylesheet' type='text/css'
   body
-    = yield
+    .wrapper
+      .header
+        / .top
+        .bottom
+          == slim :'partials/logo'
+      nav.navigation
+        == slim :'partials/navigation'
+      section.main
+        section.home
+          == yield

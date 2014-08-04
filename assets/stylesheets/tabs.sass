@@ -1,0 +1,121 @@
+.nav-tabs
+  border-bottom: 5px solid #2ecc71
+  margin-bottom: 0
+  background-color: #ffffff
+  li
+    margin-bottom: 0
+    > div
+      text-decoration: none
+      margin-right: 0px
+      padding: 14px 20px 9px
+      border: none
+      font-size: 12px
+      color: #797d7b
+      text-transform: uppercase
+      background-color: #ffffff
+      outline: 0 none
+      -webkit-border-radius: 0
+      -webkit-background-clip: padding-box
+      -moz-border-radius: 0
+      -moz-background-clip: padding
+      border-radius: 0
+      background-clip: padding-box
+    a
+      text-decoration: none
+      margin-right: 0px
+      padding: 14px 20px 9px
+      border: none
+      font-size: 12px
+      color: #797d7b
+      text-transform: uppercase
+      background-color: #ffffff
+      outline: 0 none
+      -webkit-border-radius: 0
+      -webkit-background-clip: padding-box
+      -moz-border-radius: 0
+      -moz-background-clip: padding
+      border-radius: 0
+      background-clip: padding-box
+      &:hover, &:active, &:focus
+        text-decoration: none
+        margin-right: 0px
+        padding: 14px 20px 9px
+        border: none
+        font-size: 12px
+        color: #797d7b
+        text-transform: uppercase
+        background-color: #ffffff
+        outline: 0 none
+        -webkit-border-radius: 0
+        -webkit-background-clip: padding-box
+        -moz-border-radius: 0
+        -moz-background-clip: padding
+        border-radius: 0
+        background-clip: padding-box
+      [class^="icon-"], &:hover [class^="icon-"], &:active [class^="icon-"], &:focus [class^="icon-"], [class*=" icon-"], &:hover [class*=" icon-"], &:active [class*=" icon-"], &:focus [class*=" icon-"]
+        margin: 0 0 6px
+        display: block
+        text-align: center
+      span, &:hover span, &:active span, &:focus span
+        display: block
+        text-align: center
+      &:hover
+        color: #2ecc71
+    > div [class^="icon-"], > div [class*=" icon-"]
+      margin: 0 0 6px
+      display: block
+      text-align: center
+    > div span
+      display: block
+      text-align: center
+    &.active
+      > div
+        border: none
+        background-color: #2ecc71
+        color: #ffffff
+      a
+        border: none
+        background-color: #2ecc71
+        color: #ffffff
+        &:hover, &:active, &:focus
+          border: none
+          background-color: #2ecc71
+          color: #ffffff
+  + .box
+    position: relative
+    z-index: 10
+  &.nav-stacked
+    > li
+      &:first-child > a, &:last-child > a
+        -webkit-border-radius: 0
+        -webkit-background-clip: padding-box
+        -moz-border-radius: 0
+        -moz-background-clip: padding
+        border-radius: 0
+        background-clip: padding-box
+      > a
+        border: none
+        border-bottom: 1px solid #e3e3e3
+        background-color: #fbfbf9
+        padding: 15px 20px
+        text-transform: none
+        &:hover, &:active, &:focus
+          border-bottom: 1px solid #2ecc71
+          background-color: #2ecc71
+          color: #ffffff
+    li.active
+      position: relative
+      a
+        border-right: none
+        border-bottom: 1px solid #e3e3e3
+        background-color: #ffffff
+        color: #2ecc71
+        font-weight: 700
+      &:after
+        content: ""
+        position: absolute
+        top: 0
+        bottom: 1px
+        right: -1px
+        width: 1px
+        background-color: #ffffff

@@ -1,0 +1,147 @@
+.flexslider
+  margin: 0
+  padding: 0
+  .slides
+    > li
+      display: none
+      -webkit-backface-visibility: hidden
+    img
+      width: 100%
+      display: block
+
+.flex-pauseplay span
+  text-transform: capitalize
+
+.slides:after
+  content: "."
+  display: block
+  clear: both
+  visibility: hidden
+  line-height: 0
+  height: 0
+
+html[xmlns] .slides
+  display: block
+
+* html .slides
+  height: 1%
+
+.no-js .slides > li:first-child
+  display: block
+
+.flexslider
+  margin: -40px 0 80px
+  position: relative
+  z-index: 10
+  border: none
+  background-color: transparent
+  -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.1)
+  -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.1)
+  box-shadow: 0 1px 2px rgba(71, 73, 72, 0.1)
+  .slides li
+    list-style: none
+  .flex-control-nav
+    margin: 0
+    position: absolute
+    bottom: 15px
+    width: 100%
+    text-align: center
+    li
+      list-style: none
+      display: inline-block
+      margin: 0 5px
+    a
+      text-decoration: none
+      display: block
+      width: 12px
+      height: 12px
+      background-color: transparent
+      text-indent: -9999px
+      border: 2px solid #ffffff
+      cursor: pointer
+      -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.5)
+      -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.5)
+      box-shadow: 0 1px 2px rgba(71, 73, 72, 0.5)
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      -webkit-border-radius: 9999px
+      -webkit-background-clip: padding-box
+      -moz-border-radius: 9999px
+      -moz-background-clip: padding
+      border-radius: 9999px
+      background-clip: padding-box
+      -webkit-background-clip: border-box
+      -moz-background-clip: border-box
+      background-clip: border-box
+      &:hover
+        background-color: rgba(255, 255, 255, 0.5)
+      &.flex-active
+        background-color: #ffffff
+  .flex-direction-nav
+    position: absolute
+    top: 50%
+    width: 100%
+    margin: -50px 0 0
+    &:before
+      content: ''
+      display: block
+    &:after
+      content: ''
+      display: table
+      clear: both
+    li
+      display: block
+      list-style: none
+      float: right
+      padding-right: 20px
+      a
+        background: url('../../img/rarr.png') no-repeat center center
+        text-decoration: none
+      &:first-child
+        float: left
+        padding-right: 0
+        padding-left: 20px
+        a
+          background-image: url('../../img/larr.png')
+    a
+      display: block
+      width: 55px
+      height: 102px
+      text-indent: -9999px
+      text-decoration: none
+      -webkit-transition: all 200ms ease-in-out
+      -moz-transition: all 200ms ease-in-out
+      -o-transition: all 200ms ease-in-out
+      -ms-transition: all 200ms ease-in-out
+      transition: all 200ms ease-in-out
+      -webkit-opacity: 0.5
+      -moz-opacity: 0.5
+      opacity: 0.5
+      &:hover
+        -webkit-opacity: 1
+        -moz-opacity: 1
+        opacity: 1
+      &:focus, &:active
+        outline: 0 none
+    .flex-prev
+      left: 0
+    .flex-next
+      right: 0
+    .flex-prev, .flex-next
+      position: static
+  .flex-progress
+    bottom: 0
+    position: absolute
+    width: 100%
+    z-index: 20
+    background-color: rgba(71, 73, 72, 0.2)
+    span
+      display: block
+      height: 5px
+      background-color: #2ecc71
+      width: 0%
+
+@media (max-width: 479px)
+  .flex-control-nav
+    display: none

@@ -209,3 +209,651 @@ ul
       color: #adafae
   .active
     color: #939694
+
+.caption
+  position: absolute
+  top: 50%
+  bottom: auto
+  width: 100%
+  margin-top: -85px
+  padding: 0
+  background-color: transparent
+  overflow: visible
+  font-family: inherit !important
+  -webkit-opacity: 1
+  -moz-opacity: 1
+  opacity: 1
+  h3
+    display: inline-block
+    font-weight: 700
+    padding: 10px 20px
+    background-color: #2ecc71
+    color: #ffffff
+    margin-bottom: 0
+    line-height: 54px
+  p
+    display: inline-block
+    padding: 10px 20px
+    background-color: rgba(71, 73, 72, 0.8)
+    color: #ffffff
+    font-size: 16px
+    line-height: 24px
+    margin-bottom: 20px
+  .btn
+    display: inline-block !important
+    border-bottom: none !important
+
+@media (min-width: 768px) and (max-width: 979px)
+  .caption
+    margin-top: -75px
+
+@media (max-width: 767px)
+  .caption
+    display: none !important
+    -webkit-opacity: 0 !important
+    -moz-opacity: 0 !important
+    opacity: 0 !important
+
+@media (min-width: 768px) and (max-width: 979px)
+  .caption h3
+    font-size: 24px
+    line-height: 36px
+
+@media (min-width: 768px) and (max-width: 979px)
+  .caption p
+    font-size: 12px
+    line-height: 18px
+
+.promos
+  margin-bottom: 60px
+  .box
+    color: #939694
+  .hgroup.title
+    border-bottom: 0
+    padding-bottom: 0
+    margin-bottom: 20px
+  p
+    margin-bottom: 0
+    font-size: 12px
+    line-height: 18px
+  img
+    float: right
+    margin: 0 0 10px 10px
+  .low-price img
+    margin-top: -25px
+
+.jcarousel-wrapper
+  position: relative
+
+.jcarousel
+  position: relative
+  overflow: hidden
+  margin-bottom: 0
+  ul
+    width: 20000em
+    position: absolute
+    list-style: none
+    margin-bottom: 0
+  li
+    margin-bottom: 0
+  a
+    margin: 0 4px 6px
+    text-decoration: none
+
+.jcarousel-controls
+  &:before
+    content: ''
+    display: block
+  &:after
+    content: ''
+    display: table
+    clear: both
+  .carousel-control-prev, .carousel-control-next
+    display: block
+    line-height: 24px
+    width: 24px
+    height: 24px
+    text-align: center
+    background-color: #474948
+    color: #ffffff
+    float: left
+    margin: 4px 0
+  .carousel-control-prev:hover, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-next:focus
+    background-color: #2ecc71
+  .carousel-control-prev
+    margin-right: 1px
+
+.featured
+  margin-bottom: 80px
+
+.static-page
+  margin-bottom: 20px
+  padding: 20px
+  -webkit-border-radius: 2px
+  -webkit-background-clip: padding-box
+  -moz-border-radius: 2px
+  -moz-background-clip: padding
+  border-radius: 2px
+  background-clip: padding-box
+  -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25)
+  -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25)
+  box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25)
+  padding: 0
+  background-color: #ffffff
+  .box-header
+    margin: 0 -20px
+    padding: 0 20px
+    border-bottom: 1px solid #f0f0f0
+    padding-bottom: 20px
+    background-color: #ffffff
+    h3
+      font-size: 16px
+      line-height: 24px
+      color: #474948
+      font-weight: 700
+      margin: 0
+    h5
+      font-size: 14px
+      line-height: 21px
+      color: #939694
+      font-weight: 400
+      margin: 0
+  .box-image
+    margin: -20px -20px 20px
+    border-bottom: 1px solid #f0f0f0
+    a, img
+      display: block
+  .box-body, .box-content
+    margin-top: 20px
+  .box-body > *:last-child, .box-content > *:last-child
+    margin-bottom: 0
+  .box-body .price-list, .box-content .price-list
+    margin: -20px
+  .box-body .price-list li, .box-content .price-list li
+    margin: 0
+  .box-footer
+    margin: 20px -20px -20px
+    padding: 20px
+    border-top: 1px solid #f0f0f0
+    background-color: #f9f9f9
+    &:before
+      content: ''
+      display: block
+    &:after
+      content: ''
+      display: table
+      clear: both
+  .box-header + .box-footer
+    border-top: none
+    margin-top: 0
+  .box-content.highlight
+    margin: 0 -20px
+    padding: 0 20px
+    padding: 20px
+    background-color: #f9f9f9
+    margin-bottom: -20px
+  .buttons
+    margin: 20px -20px -20px
+    padding: 20px
+    border-top: 1px solid #f0f0f0
+    background-color: #f9f9f9
+    &:before
+      content: ''
+      display: block
+    &:after
+      content: ''
+      display: table
+      clear: both
+  .hgroup.title + .buttons
+    border-top: none
+    margin-top: 0
+  > .row-fluid
+    position: relative
+    >
+      .span3
+        position: absolute
+        top: 0
+        bottom: 0
+        background-color: #fbfbf9
+        border-right: 1px solid #e3e3e3
+      .span9
+        margin-left: 25.641%
+        min-height: 600px
+  .content
+    padding: 30px 60px 30px 30px
+    min-height: 260px
+    .row, .row-fluid
+      margin-bottom: 20px
+    ul ul, ol ol, ul ol, ol ul
+      padding-left: 40px
+
+@media (max-width: 767px)
+  .static-page > .row-fluid
+    position: static
+
+@media (max-width: 767px)
+  .static-page > .row-fluid > .span3
+    position: static
+    top: auto
+    bottom: auto
+
+@media (max-width: 767px)
+  .static-page > .row-fluid > .span9
+    margin-left: 0
+
+@media (max-width: 767px)
+  .static-page .content
+    padding: 30px 60px
+
+.filter
+  .control-group, input, select, textarea
+    margin-bottom: 0
+
+.well
+  border: 1px solid #e7e7da
+  color: #606362
+  padding: 20px
+  margin-bottom: 40px
+  background-color: #fbfbf9
+  -webkit-border-radius: 2px
+  -webkit-background-clip: padding-box
+  -moz-border-radius: 2px
+  -moz-background-clip: padding
+  border-radius: 2px
+  background-clip: padding-box
+  -webkit-box-shadow: none
+  -moz-box-shadow: none
+  box-shadow: none
+  &:before
+    content: ''
+    display: block
+  &:after
+    content: ''
+    display: table
+    clear: both
+  *:last-child
+    margin-bottom: 0
+
+.well-large
+  padding: 40px
+
+.options-panel
+  position: fixed
+  top: 200px
+  left: -240px
+  z-index: 1000
+  width: 272px
+  &:before
+    content: ''
+    display: block
+  &:after
+    content: ''
+    display: table
+    clear: both
+  .options-panel-content
+    width: 200px
+    padding: 20px
+    background-color: #ffffff
+    float: left
+    -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.2)
+    -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.2)
+    box-shadow: 0 1px 2px rgba(71, 73, 72, 0.2)
+  .options-panel-toggle
+    float: left
+    width: 32px
+    height: 32px
+    a
+      display: block
+      width: 32px
+      height: 32px
+      font-size: 16px
+      line-height: 32px
+      text-align: center
+      background-color: #2ecc71
+      color: #ffffff
+      text-decoration: none
+
+.hero-unit
+  border: 1px solid #e3e3e3
+  background-color: #f0f0f0
+  -webkit-border-radius: 2px
+  -webkit-background-clip: padding-box
+  -moz-border-radius: 2px
+  -moz-background-clip: padding
+  border-radius: 2px
+  background-clip: padding-box
+
+.show-grid [class*="span"]
+  background-color: #f0f0f0
+  text-align: center
+  line-height: 40px
+  font-size: 12px
+  -webkit-border-radius: 2px
+  -webkit-background-clip: padding-box
+  -moz-border-radius: 2px
+  -moz-background-clip: padding
+  border-radius: 2px
+  background-clip: padding-box
+
+.orders tbody, .order tbody
+  line-height: 28px
+  font-size: 12px
+
+.label
+  -webkit-border-radius: 2px
+  -webkit-background-clip: padding-box
+  -moz-border-radius: 2px
+  -moz-background-clip: padding
+  border-radius: 2px
+  background-clip: padding-box
+  font-size: 10px
+  line-height: 14px
+  padding: 2px 6px
+  text-transform: uppercase
+  text-shadow: none
+  letter-spacing: 0.5px
+
+.label-sale
+  background-color: #2ecc71
+
+.alert
+  font-size: 13px
+  -webkit-border-radius: 2px
+  -webkit-background-clip: padding-box
+  -moz-border-radius: 2px
+  -moz-background-clip: padding
+  border-radius: 2px
+  background-clip: padding-box
+
+.widget
+  background-color: #ffffff
+  border-top: 5px solid #2ecc71
+  padding: 20px
+  margin-bottom: 20px
+  -webkit-border-radius: 2px
+  -webkit-background-clip: padding-box
+  -moz-border-radius: 2px
+  -moz-background-clip: padding
+  border-radius: 2px
+  background-clip: padding-box
+  -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25)
+  -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25)
+  box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25)
+  h3.widget-title
+    font-size: 16px
+    line-height: 24px
+    font-weight: 700
+    padding: 20px
+    margin: -20px -20px 20px
+    border-bottom: 1px solid #f0f0f0
+  &.Categories ul, &.Menu ul
+    list-style: none
+    margin: 0
+  &.Categories > ul, &.Menu > ul
+    margin: -20px -20px
+  &.Categories a, &.Menu a
+    display: block
+    padding: 15px 20px
+    border-bottom: 1px solid #f0f0f0
+    color: #797d7b
+    text-decoration: none
+    font-size: 12px
+  &.Categories a:hover, &.Menu a:hover, &.Categories a:focus, &.Menu a:focus
+    background-color: #2ecc71
+    color: #ffffff
+  &.Categories a:hover .count, &.Menu a:hover .count, &.Categories a:focus .count, &.Menu a:focus .count
+    background-color: #ffffff
+    color: #2ecc71
+    text-shadow: none
+  &.Categories ul ul a, &.Menu ul ul a
+    padding-left: 40px
+
+.adverts
+  list-style: none
+  margin: 0
+  li + li
+    margin-top: 20px
+  a
+    display: block
+    border: 5px solid #f0f0f0
+    position: relative
+    overflow: hidden
+    &:before
+      content: ""
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background-color: rgba(71, 73, 72, 0.2)
+      -webkit-transition: all 0.3s ease-in-out
+      -moz-transition: all 0.3s ease-in-out
+      -o-transition: all 0.3s ease-in-out
+      -ms-transition: all 0.3s ease-in-out
+      transition: all 0.3s ease-in-out
+      -webkit-opacity: 0
+      -moz-opacity: 0
+      opacity: 0
+    &:hover
+      border-color: #2ecc71
+      &:before
+        -webkit-opacity: 1
+        -moz-opacity: 1
+        opacity: 1
+
+.isotope
+  -webkit-transition-duration: 0.5s
+  -moz-transition-duration: 0.5s
+  -ms-transition-duration: 0.5s
+  -o-transition-duration: 0.5s
+  transition-duration: 0.5s
+  .isotope-item
+    -webkit-transition-duration: 0.5s
+    -moz-transition-duration: 0.5s
+    -ms-transition-duration: 0.5s
+    -o-transition-duration: 0.5s
+    transition-duration: 0.5s
+    -webkit-transition-property: -webkit-transform, opacity
+    -moz-transition-property: -moz-transform, opacity
+    -ms-transition-property: -ms-transform, opacity
+    -o-transition-property: -o-transform, opacity
+    transition-property: transform, opacity
+  -webkit-transition-property: height, width
+  -moz-transition-property: height, width
+  -ms-transition-property: height, width
+  -o-transition-property: height, width
+  transition-property: height, width
+  &.no-transition
+    -webkit-transition-duration: 0s
+    -moz-transition-duration: 0s
+    -ms-transition-duration: 0s
+    -o-transition-duration: 0s
+    transition-duration: 0s
+    .isotope-item
+      -webkit-transition-duration: 0s
+      -moz-transition-duration: 0s
+      -ms-transition-duration: 0s
+      -o-transition-duration: 0s
+      transition-duration: 0s
+  .isotope-item.no-transition
+    -webkit-transition-duration: 0s
+    -moz-transition-duration: 0s
+    -ms-transition-duration: 0s
+    -o-transition-duration: 0s
+    transition-duration: 0s
+
+.post-list
+  margin-left: -30px
+  &:before
+    content: ''
+    display: block
+  &:after
+    content: ''
+    display: table
+    clear: both
+
+@media (min-width: 980px) and (max-width: 1199px)
+  .post-list
+    margin-left: -20px
+
+@media (max-width: 979px)
+  .post-list
+    margin-left: 0
+
+.post-grid
+  float: left
+  margin-left: 30px
+  margin-bottom: 30px
+  width: 420px
+  .box
+    margin-bottom: 0
+
+@media (min-width: 980px) and (max-width: 1199px)
+  .post-grid
+    width: 345px
+    margin-left: 20px
+    margin-bottom: 20px
+
+@media (max-width: 979px)
+  .post-grid
+    width: 100%
+    margin-left: 0
+    margin-bottom: 20px
+    float: none
+
+.post-meta
+  list-style: none
+  font-size: 12px
+  color: #a6a9a8
+  margin: 10px 0 0
+  &:before
+    content: ''
+    display: block
+  &:after
+    content: ''
+    display: table
+    clear: both
+  li
+    float: left
+    margin-right: 10px
+
+#td-store-locator-map.active-stores
+  height: 480px
+
+#td-store-locator-results.active-stores
+  height: 480px
+  overflow: auto
+  margin-bottom: 0
+  li
+    padding: 20px 20px 20px 0
+    border-top: 1px solid #f0f0f0
+    &:first-child
+      border-top: none
+  h3
+    font-size: 14px
+    line-height: 18px
+    font-weight: 700
+    margin-bottom: 0
+  small
+    display: block
+    font-size: 12px
+    line-height: 18px
+    margin-bottom: 20px
+    color: #c7c8c8
+    white-space: nowrap
+  p
+    font-size: 12px
+    line-height: 18px
+    margin-bottom: 0
+    img
+      margin: 0 10px 10px 0
+      float: left
+
+.store_locator .well
+  margin-bottom: 40px
+
+@media (max-width: 979px)
+  .store_locator .well
+    input[type="text"], select
+      margin-bottom: 10px
+    .btn
+      margin-bottom: 10px
+      &.btn-primary
+        margin-bottom: 0
+
+#td-store-locator-map
+  *
+    -moz-box-sizing: content-box
+    box-sizing: content-box
+    &:after, &:before
+      -moz-box-sizing: content-box
+      box-sizing: content-box
+  img
+    max-width: none
+    height: auto
+
+@media (max-width: 767px)
+  #td-store-locator-form .row-fluid [class*="span"]
+    margin-bottom: 10px
+    .btn-mini
+      margin-bottom: 20px
+
+@media (min-width: 980px)
+  .row-collapse
+    [class*="span"]
+      margin: 0
+    .span1
+      width: 8.33%
+    .span2
+      width: 16.66%
+    .span3
+      width: 25%
+    .span4
+      width: 33.33%
+    .span5
+      width: 41.66%
+    .span6
+      width: 50%
+    .span7
+      width: 58.33%
+    .span8
+      width: 66.66%
+    .span9
+      width: 75%
+    .span10
+      width: 83.33%
+    .span11
+      width: 91.66%
+    .span12
+      width: 100%
+
+.list-chevron.links
+  li
+    margin-bottom: 10px
+  small
+    font-style: italic
+    color: #868988
+    font-size: 11px
+    margin-left: 12px
+
+.flex-video
+  position: relative
+  padding-top: 25px
+  padding-bottom: 67.5%
+  height: 0
+  margin-bottom: 16px
+  overflow: hidden
+  &.widescreen
+    padding-bottom: 53.25%
+  &.vimeo
+    padding-top: 0
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px)
+  .flex-video
+    padding-top: 0

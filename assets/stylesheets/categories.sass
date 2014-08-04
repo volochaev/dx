@@ -1,0 +1,103 @@
+.category .sidebar
+  .children
+    font-size: 12px
+    .title a
+      color: #474948
+      text-decoration: none
+      &:hover
+        color: #2ecc71
+  .category-list
+    margin: 0 0 -20px
+    li
+      list-style: none
+      > .category-list .padding
+        padding-left: 40px
+      &.current a
+        font-weight: 700
+        color: #474948
+        &:hover
+          color: #ffffff
+    a
+      margin: 0 -20px
+      padding: 0 20px
+      padding-top: 15px
+      padding-bottom: 15px
+      display: block
+      border-bottom: 1px solid #f0f0f0
+      color: #797d7b
+      text-decoration: none
+      &:hover, &:focus
+        background-color: #2ecc71
+        color: #ffffff
+      &:hover .count, &:focus .count
+        background-color: #ffffff
+        color: #2ecc71
+        text-shadow: none
+    .count
+      float: right
+      background-color: #d7d7d7
+      font-weight: 600
+      color: #ffffff
+      display: inline-block
+      width: 20px
+      font-size: 11px
+      height: 20px
+      text-align: center
+      -webkit-border-radius: 3px
+      -webkit-background-clip: padding-box
+      -moz-border-radius: 3px
+      -moz-background-clip: padding
+      border-radius: 3px
+      background-clip: padding-box
+  .price-filter
+    .ui-slider
+      background-color: #f0f0f0
+      border: 1px solid #d7d7d7
+      height: 10px
+      position: relative
+      margin-bottom: 20px
+      -webkit-border-radius: 9999px
+      -webkit-background-clip: padding-box
+      -moz-border-radius: 9999px
+      -moz-background-clip: padding
+      border-radius: 9999px
+      background-clip: padding-box
+      -webkit-box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+      -moz-box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+      box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+      .ui-slider-range
+        height: 100%
+        position: absolute
+        top: -1px
+        z-index: 10
+        background-color: #2ecc71
+        border-top: 1px solid #25a25a
+        border-bottom: 1px solid #25a25a
+        -webkit-border-radius: 9999px
+        -webkit-background-clip: padding-box
+        -moz-border-radius: 9999px
+        -moz-background-clip: padding
+        border-radius: 9999px
+        background-clip: padding-box
+        -webkit-box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+        -moz-box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+        box-shadow: inset 0 1px 2px rgba(71, 73, 72, 0.2)
+      .ui-slider-handle
+        position: absolute
+        width: 16px
+        height: 16px
+        margin-left: -8px
+        margin-top: -2px
+        background: url('../../img/ui-slider-handle.png') no-repeat
+        z-index: 20
+        &:focus
+          outline: 0 none
+    #slider
+      margin-top: 20px
+    #slider-label
+      font-size: 12px
+      color: #939694
+      strong
+        color: #2ecc71
+  .best-selling .hgroup.title
+    margin-bottom: 20px
