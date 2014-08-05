@@ -1,0 +1,37 @@
+section.promos
+  .container
+    .row
+      .span4
+        .free-shipping
+          .box.border-top
+            img alt="" src="images/free-shipping.png"
+            .hgroup.title
+              h3 Free UK shipping!
+              h5 This is a snappy sub-title
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque beatae tempore porro officiis!
+      .span4
+        .world-shipping
+          .box.border-top
+            img alt="" src="images/world-shipping.png"
+            .hgroup.title
+              h3 We're now global!
+              h5 This is a snappy sub-title
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque beatae tempore porro officiis!
+      .span4
+        .low-price
+          .box.border-top
+            img alt="" src="images/low-price.png"
+            .hgroup.title
+              h3 Lowest price guarantee!
+              h5 This is a snappy sub-title
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque beatae tempore porro officiis!
+
+section.featured
+  .container
+    .row
+      .span12
+        loader
+        ul.product-list.isotope
+          product-tile ng-repeat="product in products"
+          div ng-if="current_user.admin"
+            new-product-tile

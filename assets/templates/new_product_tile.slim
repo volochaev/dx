@@ -1,0 +1,15 @@
+li ng-class="standard"
+  a title="{{newProduct.name}}" ng-click="ngDialog.open({template: '<p>my template</p>',plain: true});"
+    .image
+      img ng-repeat="image in newProduct.images" ng-class="{primary: $index == '0' , secondary: $index >= '1' }" ng-src="{{image}}"
+      span.badge.badge-sale ng-show="{{newProduct.sale}}" SALE
+    .title
+      .prices
+        div ng-show="{{ newProduct.sale }}"
+          del.base {{newProduct.price | currency }}
+          '
+          span.price {{newProduct.sale_price | currency }}
+        div ng-show="{{ !newProduct.sale }}"
+          span.price {{newProduct.price | currency }}
+      h3
+        | {{ newProduct.name }}

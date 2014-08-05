@@ -1,5 +1,5 @@
 doctype html
-html dir='ltr' lang='ru'
+html dir='ltr' lang='ru' ng-app="DX"
   head
     meta charset='utf-8'
     meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
@@ -18,7 +18,24 @@ html dir='ltr' lang='ru'
         .bottom
           == slim :'partials/logo'
       nav.navigation
-        == slim :'partials/navigation'
+        .container
+          .row
+            .span8
+              a.main-menu-button href="#"  Navigation
+              .megamenu_container
+                .menu-main-navigation-container
+                  ul#menu-main-navigation.main-menu
+                    li
+                      a href="blog.html"  Blog
+                    li
+                      a href="store-locator.html"  Store locator
+                    li
+                      a href="cart.html"  Cart
+            .span4
+              user-panel
+
       section.main
         section.home
-          == yield
+          ng-view
+
+    == js :application

@@ -1,0 +1,34 @@
+.mini-cart
+  .cart-count
+    a title='Перейти к корзине &rarr;'
+      span {{ cart.items.length }}
+  #autocomplete-results.hidden
+    ul
+      li
+        a href="product.html" title=("Lisette Dress")
+          .image
+            img alt="" src="images/thumbnails/db_file_img_48_60x60.jpg" /
+          h6 Lisette Dress
+      li
+        a href="product.html" title=("Malta Dress")
+          .image
+            img alt="" src="images/thumbnails/db_file_img_137_60x60.jpg" /
+          h6 Malta Dress
+      li
+        a href="product.html" title=("Marais Dress")
+          .image
+            img alt="" src="images/thumbnails/db_file_img_42_60x60.jpg" /
+          h6 Marais Dress
+      li
+        a href="product.html" title=("Millay Dress")
+          .image
+            img alt="" src="images/thumbnails/db_file_img_107_60x60.jpg" /
+          h6 Millay Dress
+      li
+        a href="product.html" title=("Momoko Dress")
+          .image
+            img alt="" src="images/thumbnails/db_file_img_132_60x60.jpg" /
+          h6 Momoko Dress
+
+.user-actions
+  span Welcome back, {{ current_user.name }}

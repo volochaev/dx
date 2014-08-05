@@ -1,0 +1,15 @@
+li ng-class="standard"
+  a href="/product/{{product.name}}" title="{{product.name}}"
+    .image
+      img ng-repeat="image in product.images" ng-class="{primary: $index == '0' , secondary: $index >= '1' }" ng-src="{{image}}"
+      span.badge.badge-sale ng-show="{{product.sale}}" SALE
+    .title
+      .prices
+        div ng-show="{{ product.sale }}"
+          del.base {{product.price | currency }}
+          '
+          span.price {{product.sale_price | currency }}
+        div ng-show="{{ !product.sale }}"
+          span.price {{product.price | currency }}
+      h3
+        | {{product.name}}
